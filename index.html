@@ -1,27 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/dashboard-logo.svg" type="image/x-icon">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
+    <!-- <link rel="stylesheet" href="./css/global.css"> -->
+    <!-- <link rel="stylesheet" href="./css/style.css">  -->
     <link rel="stylesheet" href="./css/style.mini.css">
     <title>Dashboard</title>
 </head>
+
 <body>
-    <div class="container">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id veniam possimus
-            repellendus voluptates, tenetur mollitia ipsum perferendis consequatur aut, 
-            ab obcaecati iure fugit, quod reprehenderit officia dolorem consequuntur quaerat 
-            sed eius odio optio nam ut pariatur. Officia atque eaque non necessitatibus. Impedit 
-            culpa minus esse nisi iste maiores illum suscipit, deleniti nemo, velit architecto 
-            dolorem quidem vitae? Eius, natus. Maiores nihil architecto reiciendis, facilis
-            ipsam voluptatibus eius. Corporis cupiditate illum suscipit eaque dolorem totam
-            at nihil accusantium nemo rem voluptatibus odio ducimus, numquam asperiores porro
-            animi deserunt molestias provident quae libero. Est totam tempore porro aliquam quia,
-            libero corrupti tenetur.</p>
+    <div class="wrapper container">
+        <!-- SITEBAR START -->
+        <div class="sitebar">
+            <div class="sitebar-logo">
+                <a href="index.html" class="site-logo">
+                    <img src="./images/site-logo-width-text.svg" alt="Dashboard website logo" width="158" height="39"
+                        class="site-logo__image">
+                </a>
+            </div>
+        <nav class="sitenav">
+            <ul class="sitenav__list">
+                <li class="sitenav__item active">
+                    <a class="sitenav__link" href="#">
+                        <img class="sitenav__link--icon" src="./images/overview-icon.svg">
+                        <span class="sitenav__link--text">Overview</span>
+                    </a>
+                </li>
+
+                <li class="sitenav__item ">
+                    <a class="sitenav__link" href="#">
+                        <img class="sitenav__link--icon" src="./images/tickets-icon.svg">
+                        <span class="sitenav__link--text">Tickets</span>
+                    </a>
+                </li>
+
+                <li class="sitenav__item ">
+                    <a class="sitenav__link" href="#">
+                        <img class="sitenav__link--icon" src="./images/ideas-icon.svg">
+                        <span class="sitenav__link--text">Ideas</span>
+                    </a>
+                </li>
+
+                <li class="sitenav__item ">
+                    <a class="sitenav__link" href="#">
+                        <img class="sitenav__link--icon" src="./images/contact-icon.svg">
+                        <span class="sitenav__link--text">Contacts</span>
+                    </a>
+                </li>
+
+                <li class="sitenav__item ">
+                    <a class="sitenav__link" href="#">
+                        <img class="sitenav__link--icon" src="./images/agent-icon.svg">
+                        <span class="sitenav__link--text">Agents</span>
+                    </a>
+                </li>
+
+                <li class="sitenav__item    ">
+                    <a class="sitenav__link" href="#">
+                        <img class="sitenav__link--icon" src="./images/articles-icon.svg">
+                        <span class="sitenav__link--text">Aricles</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="sitebar-bottom">
+            <ul class="sitebar-bottom__list">
+                <li class="sitebar-bottom__item mode">
+                    <img src="./images/change-mode.svg" alt="Change Mode" class="sitebar-bottom__image" width="140" height="24">
+                </li>
+                 <li class="sitebar-bottom__item logout">
+                    <img src="./images/Logout.svg" alt="Logout" class="sitebar-bottom__image" width="91" height="20">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- SITEBAR END -->
+
+    <!-- MAIN START -->
+    <!-- MAIN SECTION START-->
+        <div class="main container">
+            <div class="main-user">
+                <div class="main-user__grid">
+                    <a href="#" class="main-user__grid-link"><img src="./images/logo-grid.svg" alt="Logo grid" class="main-user__grid-image"></a>
+                </div>
+                <div class="main-user_names">
+                    <p class="main-user__surname">
+                        Jones Ferdinand
+                    </p>
+                    <img src="./images/user-image.png" alt="User image" class="main-user__image">
+                </div>
+            </div>
+
+            <div class="main-section__top">
+                <h1 class="main-section__top-title"><a href="#" class="main-section__top-title-link">Overview</a></h1>
+                <div class="main-section__buttons">
+                    <a class="main-section__button" href="#"><img src="./images/point.png" alt="Point"></a>
+                    <a class="main-section__add" href="#"><img src="./images/add.png" alt="Add button"></a>
+                </div>
+            </div>
+
+            <div class="users">
+                <h3 class="user-owner user-title">Owner</h3>
+                <h3 class="user-end-date user-title">End date</h3>
+                <h3 class="user-profits user-title">Profits</h3>
+                <h3 class="user-losses user-title">Losses</h3>
+                <h3 class="user-phone user-title">Phone</h3>
+            </div>
+            
+            <div class="user-list user-list-bg">
+                <a href="#" class="user-list__image">
+                    <img src="./images/savannahNguyen.png" alt="Savanna Nguyen Image" class="user-image">
+                    <span class="user-name user-info">Savannah Nguyen</span>
+                </a>
+                <p class="end-date user-info">1/15/12</p>
+                <p class="profits user-info">$328.85</p>
+                <p class="losses user-info">$779.58</p>
+                <p class="phone user-info">(603) 555-0123</p>
+            </div>
+
+            <div class="user-list">
+                <a href="#" class="user-list__image">
+                    <img src="./images/jennyWilson.png" alt="Jenny Wilson image" class="user-image">
+                    <span class="user-name user-info">Jenny Wilson</span>
+                </a>
+                <p class="end-date user-info">8/30/14</p>
+                <p class="profits user-info">$948.55</p>
+                <p class="losses user-info">$589.99</p>
+                <p class="phone user-info">(629) 555-0129</p>
+            </div>
+
+            <div class="user-list  user-list-bg">
+                <a href="#" class="user-list__image">
+                    <img src="./images/annetteBlack.png" alt="Annette Black image" class="user-image">
+                    <span class="user-name user-info">Annette Black</span>
+                </a>
+                <p class="end-date user-info">5/30/14</p>
+                <p class="profits user-info">$778.35</p>
+                <p class="losses user-info">$948.55</p>
+                <p class="phone user-info">(308) 555-0121</p>
+            </div>
+
+            <div class="user-list">
+                <a href="#" class="user-list__image">
+                    <img src="./images/kathrynMurphy.png" alt="Kathryn Murphy image" class="user-image">
+                    <span class="user-name user-info">Kathryn Murphy</span>
+                </a>
+                <p class="end-date user-info">11/7/16</p>
+                <p class="profits user-info">$169.43</p>
+                <p class="losses user-info">$202.87</p>
+                <p class="phone user-info">(302) 555-0107</p>
+            </div>
+
+            <div class="user-list  user-list-bg">
+                <a href="#" class="user-list__image">
+                    <img src="./images/kameronWilliamson.png" alt="Kameron Williamson image" class="user-image">
+                    <span class="user-name user-info">Cameron Williamson</span>
+                </a>
+                <p class="end-date user-info">7/27/13</p>
+                <p class="profits user-info">$782.01</p>
+                <p class="losses user-info">$710.68</p>
+                <p class="phone user-info">(303) 555-0105</p>
+            </div>
+
+            <div class="user-list">
+                <a href="#" class="user-list__image">
+                    <img src="./images/kristinWatson.png" alt="Kristin Watson image" class="user-image">
+                    <span class="user-name user-info">Kristin Watson</span>
+                </a>
+                <p class="end-date user-info">5/19/12</p>
+                <p class="profits user-info">$767.50</p>
+                <p class="losses user-info">$779.58</p>
+                <p class="phone user-info">(225) 555-0118</p>
+            </div>
+
+            <div class="user-list  user-list-bg">
+                <a href="#" class="user-list__image">
+                    <img src="./images/eleanorPena.png" alt="Eleanor Pena image" class="user-image">
+                    <span class="user-name user-info">Eleanor Pena</span>
+                </a>
+                <p class="end-date user-info">8/21/15</p>
+                <p class="profits user-info">$475.22</p>
+                <p class="losses user-info">$219.78</p>
+                <p class="phone user-info">(205) 555-0100</p>
+            </div>
+            <div class="user-list">
+                <a href="#" class="user-list__image">
+                    <img src="./images/guyHawkins.png" alt="Guy Hawkins image" class="user-image">
+                    <span class="user-name user-info">Guy Hawkins</span>
+                </a>
+                <p class="end-date user-info">5/27/15</p>
+                <p class="profits user-info">$576.28</p>
+                <p class="losses user-info">$446.61</p>
+                <p class="phone user-info">(207) 555-0119</p>
+            </div>
+
+            <div class="user-list  user-list-bg">
+                <a href="#" class="user-list__image">
+                    <img src="./images/brooklynSimmons.png" alt="Brooklyn Simmons image" class="user-image">
+                    <span class="user-name user-info">Brooklyn Simmons</span>
+                </a>
+                <p class="end-date user-info">3/4/16</p>
+                <p class="profits user-info">$219.78</p>
+                <p class="losses user-info">$928.41</p>
+                <p class="phone user-info">(201) 555-0124</p>
+            </div>
+
+            <div class="user-list">
+                <a href="#" class="user-list__image">
+                    <img src="./images/robertFox.png" alt="Robert Fox image" class="user-image">
+                    <span class="user-name user-info">Robert Fox</span>
+                </a>
+                <p class="end-date user-info">4/4/18</p>
+                <p class="profits user-info">$202.87</p>
+                <p class="losses user-info">$275.43</p>
+                <p class="phone user-info">(684) 555-0102</p>
+            </div>
+        
+        <!-- MAIN SECTION END -->
+    
+        <!-- MAIN END -->
     </div>
 </body>
+
 </html>
